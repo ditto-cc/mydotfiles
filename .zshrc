@@ -123,7 +123,7 @@ alias df='df -h'                          # human-readable sizes
 alias grep='grep --colour=auto'
 
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/dev/workspace
+export PROJECT_HOME=$HOME/workspace
 source /usr/bin/virtualenvwrapper.sh
 
 alias vifm='~/.config/vifm/scripts/./vifmrun'
