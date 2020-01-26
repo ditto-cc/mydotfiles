@@ -121,6 +121,7 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 
 alias df='df -h'                          # human-readable sizes
 alias grep='grep --colour=auto'
+alias gitlog='git log --pretty=format:"%h - %an, %ar : %s" --graph'
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
