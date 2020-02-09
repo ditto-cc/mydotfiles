@@ -112,14 +112,13 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 
-alias df='df -h'                          # human-readable sizes
+alias df='df -h'                                            # human-readable sizes
 alias grep='grep --colour=auto'
 alias gitlog='git log --pretty=format:"%h - %an, %ar : %s" --graph'
 
@@ -128,3 +127,9 @@ export PROJECT_HOME=$HOME/workspace
 source /usr/bin/virtualenvwrapper.sh
 
 alias vifm='~/.config/vifm/scripts/./vifmrun'
+
+export SS_CONFIG_HOME=$PROJECT_HOME/mydotfiles/ss-config
+alias killss='zsh ~/$SS_CONFIG_HOME/killss.sh'
+alias ss1='zsh $SS_CONFIG_HOME/ss.sh 1'
+alias ss2='zsh $SS_CONFIG_HOME/ss.sh 2'
+alias ss5='zsh $SS_CONFIG_HOME/ss.sh 5'
