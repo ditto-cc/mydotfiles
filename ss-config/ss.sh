@@ -10,4 +10,12 @@ else
 	echo "port $ss_port"
 	kill -9 $ss_port
 fi
-nohup ss-local -c $SS_CONFIG_HOME/config$1 -v > $SS_CONFIG_HOME/log &
+
+config_no=$1
+
+if [[ $config_no -eq "3" ]] || [[ $config_no -eq "4" ]]
+then
+	nohup ss-local -c $SS_CONFIG_HOME/config$config_no --plugin obfs-local --plugin-opts "obfs=tls;obfs-host=https://www.zhibo8.cc" -v > $SS_CONFIG_HOME/log &
+else
+	nohup ss-local -c $SS_CONFIG_HOME/config$config_no -v > $SS_CONFIG_HOME/log &
+fi
