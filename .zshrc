@@ -129,7 +129,7 @@ source /usr/bin/virtualenvwrapper.sh
 alias vifm='~/.config/vifm/scripts/./vifmrun'
 
 export SS_CONFIG_HOME=$PROJECT_HOME/mydotfiles/ss-config
-alias killss='zsh ~/$SS_CONFIG_HOME/killss.sh'
+alias killss='zsh $SS_CONFIG_HOME/killss.sh'
 alias ss1='zsh $SS_CONFIG_HOME/ss.sh 1'
 alias ss2='zsh $SS_CONFIG_HOME/ss.sh 2'
 alias ss3='zsh $SS_CONFIG_HOME/ss.sh 3'
