@@ -135,3 +135,6 @@ alias ss2='zsh $SS_CONFIG_HOME/ss.sh 2'
 alias ss3='zsh $SS_CONFIG_HOME/ss.sh 3'
 alias ss4='zsh $SS_CONFIG_HOME/ss.sh 4'
 alias ss5='zsh $SS_CONFIG_HOME/ss.sh 5'
+
+export CLASH_CONFIG_HOME=$HOME/clash
+alias clash='nohup sudo clash -d $CLASH_CONFIG_HOME > $CLASH_CONFIG_HOME/log &'
